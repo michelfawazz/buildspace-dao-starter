@@ -20,7 +20,8 @@ const voteModule = sdk.getVoteModule(
 
 
 const App = () => {
-  const { connectWallet, address, error, provider } = useWeb3();
+  
+  const { connectWallet, address, provider } = useWeb3();
   console.log("👋 Address:", address)
 
   // The signer is required to sign transactions on the blockchain.
